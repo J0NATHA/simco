@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Relatórios de problemas</title>
+	   	<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	<body>
+		<div class="container">
+		
+			<h1 class="bordered-text">
+				Relatórios de problemas 
+			</h1>
+			
+		</div>
+			
+		<div class='container2' style='text-align: end; flex-direction: column; height: 35vh'>
+			
+			<form action='RelatorioProblema' method='get' style='text-align: end;'>
+	
+					<label for='tipo' class='bordered-text'>Tipo: </label>
+					<select name='tipo' id='tipo' style='width: 80%; text-align: center;'>
+					
+						<optgroup label='Geral'>
+							<option value='todos'>TODOS</option>
+							<option value='hardware'>TODOS DE HARDWARE</option>
+							<option value='software'>TODOS DE SOFTWARE</option>
+						</optgroup>
+						
+						<optgroup label='Específico'>
+							<option value='usuario'>POR UM USUÁRIO</option>
+							<option value='computador'>EM UM COMPUTADOR</option>
+							<option value='laboratorio'>EM UM LABORATÓRIO</option>
+							<option value='datas'>EM UMA FAIXA DE DATAS</option>
+						</optgroup>
+						
+					</select> 
+				
+				<input type='submit' value='PESQUISAR' class='bordered-text' style='width: 94%;'/>
+				
+			</form>
+			
+			<a href="relatorios.html" style="background-color: #999999; width:85%;" class='box-title'> 
+				Voltar
+			</a>
+			
+		</div> 
+		
+	</body>
+</html>
